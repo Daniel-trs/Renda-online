@@ -33,15 +33,16 @@
       position: relative;
       z-index: 1;
     }.bg-image {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 0.08; /* controle da suavidade */
+  opacity: 0.05; /* bem discreto */
   z-index: -1;
+  filter: blur(2px);
 }
 .cards {
   display: grid;
@@ -100,30 +101,11 @@ footer {
 
   </style>
 </head>
-<body>  <header>
+<body>
+  <div class="bg-image" style="background-image:url('https://images.unsplash.com/photo-1514361892635-eae32c3d36b9');"></div>  <header>
     <h1>Ganhe Dinheiro na Internet</h1>
     <p>Aprenda como criar renda online de forma inteligente usando cursos, estratégias digitais e oportunidades reais.</p>
-  </header>  <section>
-    <div class="bg-image" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');"></div>
-    <h2 style="text-align:center; margin-bottom:40px;">Oportunidades Recomendadas</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Curso de Marketing Digital</h3>
-        <p>Aprenda a vender produtos online, trabalhar como afiliado e criar renda todos os meses.</p>
-        <a href="#" target="_blank">Acessar Curso</a>
-      </div>
-      <div class="card">
-        <h3>Renda Extra com Afiliados</h3>
-        <p>Descubra como pessoas comuns estão faturando comissões promovendo links na internet.</p>
-        <a href="#" target="_blank">Quero Conhecer</a>
-      </div>
-      <div class="card">
-        <h3>Negócio Online do Zero</h3>
-        <p>Passo a passo para começar do absoluto zero e construir um negócio digital lucrativo.</p>
-        <a href="#" target="_blank">Ver Detalhes</a>
-      </div>
-    </div>
-  </section>  <section class="cta" style="position:relative; overflow:hidden;">
+  </header>  <section>  <section class="cta" style="position:relative; overflow:hidden;">
     <div class="bg-image" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee'); opacity:0.1;"></div>
     <h2>Comece Hoje Mesmo</h2>
     <p>As oportunidades estão aí. O próximo passo é seu. Clique nos links acima, estude e coloque em prática.</p>
