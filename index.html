@@ -30,67 +30,81 @@
       padding: 50px 20px;
       max-width: 1100px;
       margin: auto;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 25px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      margin-top: 0;
-      color: #2c5364;
-    }
-    .card p {
-      font-size: 0.95rem;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 20px;
-      background: #2c5364;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    .card a:hover {
-      background: #203a43;
-    }
-    .cta {
-      background: #fff;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    .cta h2 {
-      margin-bottom: 15px;
-    }
-    .cta p {
-      max-width: 700px;
-      margin: 0 auto 25px;
-    }
-    footer {
-      background: #203a43;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.85rem;
-    }
+      position: relative;
+      z-index: 1;
+    }.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08; /* controle da suavidade */
+  z-index: -1;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h3 {
+  margin-top: 0;
+  color: #2c5364;
+}
+.card p {
+  font-size: 0.95rem;
+}
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #2c5364;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.card a:hover {
+  background: #203a43;
+}
+.cta {
+  background: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+.cta h2 {
+  margin-bottom: 15px;
+}
+.cta p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+}
+footer {
+  background: #203a43;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+}
+
   </style>
 </head>
 <body>  <header>
     <h1>Ganhe Dinheiro na Internet</h1>
     <p>Aprenda como criar renda online de forma inteligente usando cursos, estratégias digitais e oportunidades reais.</p>
   </header>  <section>
+    <div class="bg-image" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');"></div>
     <h2 style="text-align:center; margin-bottom:40px;">Oportunidades Recomendadas</h2>
     <div class="cards">
       <div class="card">
@@ -109,7 +123,8 @@
         <a href="#" target="_blank">Ver Detalhes</a>
       </div>
     </div>
-  </section>  <section class="cta">
+  </section>  <section class="cta" style="position:relative; overflow:hidden;">
+    <div class="bg-image" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee'); opacity:0.1;"></div>
     <h2>Comece Hoje Mesmo</h2>
     <p>As oportunidades estão aí. O próximo passo é seu. Clique nos links acima, estude e coloque em prática.</p>
   </section>  <footer>
