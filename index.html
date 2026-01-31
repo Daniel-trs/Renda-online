@@ -30,83 +30,86 @@
       padding: 50px 20px;
       max-width: 1100px;
       margin: auto;
-      position: relative;
-      z-index: 1;
-    }.bg-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.05; /* bem discreto */
-  z-index: -1;
-  filter: blur(2px);
-}
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-.card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 25px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-}
-.card h3 {
-  margin-top: 0;
-  color: #2c5364;
-}
-.card p {
-  font-size: 0.95rem;
-}
-.card a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 20px;
-  background: #2c5364;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-}
-.card a:hover {
-  background: #203a43;
-}
-.cta {
-  background: #fff;
-  text-align: center;
-  padding: 50px 20px;
-}
-.cta h2 {
-  margin-bottom: 15px;
-}
-.cta p {
-  max-width: 700px;
-  margin: 0 auto 25px;
-}
-footer {
-  background: #203a43;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.85rem;
-}
-
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #2c5364;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #2c5364;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .card a:hover {
+      background: #203a43;
+    }
+    .cta {
+      background: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .cta h2 {
+      margin-bottom: 15px;
+    }
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+    footer {
+      background: #203a43;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+    }
   </style>
 </head>
-<body>
-  <div class="bg-image" style="background-image:url('https://images.unsplash.com/photo-1514361892635-eae32c3d36b9');"></div>  <header>
+<body>  <header>
     <h1>Ganhe Dinheiro na Internet</h1>
     <p>Aprenda como criar renda online de forma inteligente usando cursos, estratégias digitais e oportunidades reais.</p>
-  </header>  <section>  <section class="cta" style="position:relative; overflow:hidden;">
-    <div class="bg-image" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee'); opacity:0.1;"></div>
+  </header>  <section>
+    <h2 style="text-align:center; margin-bottom:40px;">Oportunidades Recomendadas</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Curso de Marketing Digital</h3>
+        <p>Aprenda a vender produtos online, trabalhar como afiliado e criar renda todos os meses.</p>
+        <a href="#" target="_blank">Acessar Curso</a>
+      </div>
+      <div class="card">
+        <h3>Renda Extra com Afiliados</h3>
+        <p>Descubra como pessoas comuns estão faturando comissões promovendo links na internet.</p>
+        <a href="#" target="_blank">Quero Conhecer</a>
+      </div>
+      <div class="card">
+        <h3>Negócio Online do Zero</h3>
+        <p>Passo a passo para começar do absoluto zero e construir um negócio digital lucrativo.</p>
+        <a href="#" target="_blank">Ver Detalhes</a>
+      </div>
+    </div>
+  </section>  <section class="cta">
     <h2>Comece Hoje Mesmo</h2>
     <p>As oportunidades estão aí. O próximo passo é seu. Clique nos links acima, estude e coloque em prática.</p>
   </section>  <footer>
